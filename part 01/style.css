@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+
+:root {
+  --white: #fdfcfc;
+  --gray: #f6f6f6;
+  --blue: #8eadd5;
+  --black: #272d38;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+body {
+  background-color: var(--white);
+  width: 100%;
+  color: var(--black);
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  width: 168px;
+  height: 46px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+/* header */
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 80%;
+}
+.blur > img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  padding: 30px 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 900;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: var(--black);
+}
+.menu-btn {
+  color: black;
+  border: 1px solid;
+  width: 30px;
+  display: none;
+}
+/* main */
+main {
+  padding: 50px 150px;
+}
+
+.hero,
+.aboutone,
+.contact,
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero > .title,
+.aboutone > .title,
+.contact > .title {
+  width: 50%;
+}
+.hero > .title > h1 {
+  font-size: 54px;
+  line-height: 100%;
+}
+
+.hero > .title > p,
+.contact > .title > p {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.companies {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 300;
+}
+.companies > .comps {
+  width: 90%;
+  display: inherit;
+  justify-content: space-between;
+  padding: 15px 10px;
+  background-color: var(--gray);
+  border-radius: 8px;
+}
+.about {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+}
+.aboutone {
+  align-items: center;
+}
+.aboutone > .title {
+  width: 40%;
+}
+.aboutone > .title > h2 {
+  font-size: 40px;
+}
+
+.aboutone > .title > p {
+  padding: 30px 20px 30px 0;
+}
+.blur-2 {
+  position: absolute;
+  right: -150px;
+  top: auto;
+  bottom: auto;
+  width: 50%;
+  height: 100%;
+}
+/* testimonial */
+.testimonial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial > p {
+  padding: 15px;
+  text-transform: uppercase;
+}
+.testimonial > h2 {
+  font-size: 40px;
+  width: 40%;
+  text-align: center;
+}
+
+.testimonial > .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+.testimonial > .cards > .card {
+  width: 30%;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 20px;
+  font-weight: 300;
+}
+
+.testimonial > .cards > .card > .image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.testimonial > .cards > .card > .name {
+  padding-bottom: 50px;
+}
+.contact {
+  align-items: center;
+  margin-top: 100px;
+  background-color: var(--gray);
+  border-radius: 20px;
+  padding: 0 30px;
+}
+.contact > .title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.contact > .title > h2 {
+  font-size: 40px;
+}
+.contact > .title > p {
+  padding: 30px 0;
+  font-size: 16px;
+}
+
+/* footer */
+footer {
+  padding: 50px 150px;
+  background-color: var(--gray);
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 100px;
+}
+footer > .stuff {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 25%;
+}
+
+@media screen and (max-width: 670px) {
+  .header,
+  main,
+  footer {
+    padding: 10px;
+  }
+  .nav {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+    border: none;
+  }
+
+  .hero,
+  .aboutone,
+  .testimonial > .cards {
+    flex-wrap: wrap;
+  }
+  .hero > .title,
+  .aboutone > .title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero > .title > h1 {
+    font-size: 40px;
+  }
+  .hero > .images,
+  .aboutone > .image {
+    width: 100%;
+  }
+  .companies > .comps,
+  .testimonial > .cards > .card {
+    width: 100%;
+  }
+  .companies > .comps > svg {
+    width: 20%;
+  }
+  .aboutone > .title > h2 {
+    font-size: 30px;
+  }
+  .aboutone > .title > p {
+    padding: 40px 0;
+  }
+  .testimonial > h2 {
+    width: 100%;
+  }
+  .contact {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .contact > .title {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+  footer > .stuff {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header,
+  main,
+  footer {
+    padding: 20px 10px;
+  }
+  main {
+    margin-top: 50px;
+  }
+  .hero > .title > h1 {
+    font-size: 40px;
+  }
+  .blur-2 {
+    right: -10px;
+  }
+}
