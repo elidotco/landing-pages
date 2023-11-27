@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+
+:root {
+  --background: #e9e8e8;
+  --green: #71a894;
+  --black: #303031;
+  --gray: #66645e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
+  line-height: 100%;
+}
+img {
+  width: 100%;
+  border-radius: inherit;
+}
+
+button {
+  border: none;
+  height: 44px;
+  padding: 10px 15px;
+  background: var(--green);
+  border-radius: 8px;
+  color: var(--background);
+  font-weight: 700;
+  font-size: 15px;
+}
+button.more {
+  background-color: #303031;
+}
+body {
+  background: var(--background);
+}
+
+/* Header style start */
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+  padding: 40px;
+}
+
+.logo {
+  display: flex;
+}
+.logo > img {
+  width: 68px;
+  height: 40px;
+}
+.logo > h1 {
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 500;
+}
+/* menu items */
+.nav > ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style-type: none;
+}
+.nav > ul > li > a {
+  text-decoration: none;
+  color: var(--black);
+}
+.nav > ul > li:last-child > a {
+  color: var(--green) !important;
+  font-weight: 700;
+}
+
+.menu-btn {
+  width: 50px;
+  display: none;
+}
+
+/* header styles end */
+main {
+  width: 100%;
+}
+/* hero style Start */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0 100px 40px;
+}
+
+.hero > .title {
+  width: 55%;
+}
+.hero > .title > h2 {
+  font-size: 60px;
+}
+
+.hero > .title > p {
+  padding: 30px 0;
+}
+.hero > .image {
+  position: relative;
+}
+.hero > .image > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -10;
+}
+/* hero style end */
+
+/* second section start */
+.second,
+.last {
+  width: 100%;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second > h2,
+.last > h2 {
+  font-size: 48px;
+}
+.second > p,
+.last > p {
+  padding: 15px 100px;
+  text-align: center;
+  width: 80%;
+}
+
+.second > .cards,
+.last > .cards {
+  width: 100%;
+  display: inherit;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.second > .cards > .card {
+  width: 30%;
+  background: white;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.long-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 0;
+}
+
+.long-card > .title {
+  width: 50%;
+  line-height: 10px;
+}
+.long-card > .title > h3 {
+  font-size: 48px;
+  padding: 20px 0;
+}
+.long-card > .image > img {
+  width: 80%;
+}
+.long-card > .images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  gap: 20px;
+}
+
+.long-card > .images > img:nth-child(2) {
+  width: 60%;
+}
+.long-card > .images > img:nth-child(3) {
+  width: 35%;
+  margin-top: 50px;
+}
+
+.last > .cards > .card {
+  width: 30%;
+  background: white;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px 10px 10px 10px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 30px;
+}
+.last > .cards > .card > h4 {
+  text-align: left;
+}
+.last > .cards > .card > .price {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  line-height: 20px;
+}
+.last > .cards > .card > .price > p:first-child {
+  padding: 5px;
+  background-color: var(--green);
+  color: white;
+  border-radius: 8px;
+}
+/* second section end */
+footer {
+  margin-top: 100px;
+}
+footer > .hero > .title > h2 {
+  font-size: 48px;
+}
+
+footer > .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+@media screen and (max-width: 685px) {
+  header {
+    padding: 15px;
+  }
+  .nav {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+    color: var(--black);
+  }
+}
+@media screen and (max-width: 992px) {
+  .logo > h1 {
+    display: none;
+  }
+}
