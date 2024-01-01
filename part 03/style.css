@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;700&display=swap");
+
+:root {
+  --orange: #f60;
+  --black: #0b1b35;
+  --gray: #8a898e;
+}
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header start */
+header {
+  width: 100%;
+  height: 65px;
+  padding: 50px 100px 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .logo {
+  width: 200px;
+}
+
+/* navbar start */
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-right: 100px;
+}
+
+/* buttons login */
+
+.sign-buttons > .login {
+  border: none;
+  background: transparent;
+  padding: 0 20px;
+}
+
+.sign-buttons > .signup {
+  width: 100px;
+  height: 45px;
+  background: var(--orange);
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+}
+
+/* header End */
+
+/* main */
+
+main {
+  padding: 50px 70px 100px 100px;
+  border: 1px solid rebeccapurple;
+}
+
+/* hero section start */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.hero > .images {
+  width: 45%;
+
+  height: 100%;
+  position: relative;
+}
+.hero > .images > img {
+  height: 100%;
+}
+
+.hero > .images > img:nth-child(1) {
+  position: absolute;
+  z-index: -1;
+  left: -200px;
+  bottom: -50px;
+}
+.hero > .images > img:nth-child(2) {
+  position: absolute;
+  height: 60%;
+  top: 50px;
+
+  left: -30px;
+  z-index: -1;
+}
+
+.hero > .title {
+  width: 50%;
+  border: 1px solid green;
+  padding-top: 30px;
+  padding-right: 55px;
+}
+.hero > .title > h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 60px;
+  text-wrap: wrap;
+}
