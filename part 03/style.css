@@ -63,7 +63,6 @@ header > .logo {
 
 main {
   padding: 50px 70px 100px 100px;
-  border: 1px solid rebeccapurple;
 }
 
 /* hero section start */
@@ -71,6 +70,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .hero > .images {
   width: 45%;
@@ -99,13 +99,38 @@ main {
 
 .hero > .title {
   width: 50%;
-  border: 1px solid green;
   padding-top: 30px;
-  padding-right: 55px;
 }
 .hero > .title > h1 {
   font-size: 56px;
   font-weight: 800;
   line-height: 60px;
   text-wrap: wrap;
+  padding-right: 70px;
+}
+.hero > .title > p {
+  padding: 40px 0;
+}
+
+.hero > .title > .buttons > button {
+  width: 100px;
+  height: 45px;
+  border: none;
+  margin-right: 10px;
+}
+.hero > .title > .buttons > button:nth-child(1) {
+  background-color: var(--orange);
+  color: white;
+  border-radius: 10px;
+}
+/* hero section end */
+
+/* service section */
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
