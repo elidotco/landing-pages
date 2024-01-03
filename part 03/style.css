@@ -176,3 +176,64 @@ main {
 .service > .cards-container > .card > h3 {
   font-size: 30px;
 }
+
+.service > .second {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.service > .second > .img {
+  width: 60%;
+}
+.service > .second > .word {
+  width: 20%;
+}
+.service > .second > .word > p {
+  padding: 50px 0;
+  color: var(--gray);
+  line-height: 20px;
+}
+.service > .second > .word > button {
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--gray);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.service > .testimonails {
+  margin-top: 50px;
+}
+.service > .testimonails > p {
+  color: var(--gray);
+}
+.service > .testimonails > .tcard-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+.service > .testimonails > .tcard-container > .tcard {
+  display: flex;
+  width: 35%;
+  gap: 30px;
+  border: 1px solid green;
+  height: 150px;
+}
+.service > .testimonails > .tcard-container > .tcard > .image {
+  display: flex;
+  width: 20%;
+  height: 50%;
+  border: 1px solid red;
+}
+
+.service > .testimonails > .tcard-container > .tcard > .words {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
