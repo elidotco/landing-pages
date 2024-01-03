@@ -112,13 +112,15 @@ main {
   padding: 40px 0;
 }
 
-.hero > .title > .buttons > button {
+.hero > .title > .buttons > button,
+.card > button {
   width: 100px;
-  height: 45px;
+  height: 42px;
   border: none;
   margin-right: 10px;
 }
-.hero > .title > .buttons > button:nth-child(1) {
+.hero > .title > .buttons > button:nth-child(1),
+.card > button {
   background-color: var(--orange);
   color: white;
   border-radius: 10px;
@@ -126,11 +128,51 @@ main {
 /* hero section end */
 
 /* service section */
-.services {
+.service {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 20px;
+  padding-top: 50px;
+  padding-right: 30px;
+}
+
+.service > p {
+  color: var(--gray);
+  text-transform: uppercase;
+  word-spacing: normal;
+}
+.service > h2 {
+  font-size: 40px;
+  font: bold;
+}
+
+.service > .cards-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service > .cards-container > .card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  /* box-shadow: 2px 2px 5px 5px var(--gray); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.service > .cards-container > .card > i {
+  font-size: 50px;
+}
+.service > .cards-container > .card > h3 {
+  font-size: 30px;
 }
