@@ -8,12 +8,21 @@
 img {
   width: 100%;
 }
+a {
+  text-decoration: none;
+  color: var(--black);
+}
 
+li,
+button {
+  cursor: pointer;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Header start */
@@ -136,7 +145,7 @@ main {
   align-items: center;
   text-align: center;
   gap: 20px;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-right: 30px;
 }
 
@@ -180,7 +189,7 @@ main {
 .service > .second {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .service > .second > .img {
@@ -203,11 +212,19 @@ main {
   cursor: pointer;
 }
 
-.service > .testimonails {
-  margin-top: 50px;
+.service > .testimonails,
+.team {
+  margin-top: 150px;
 }
-.service > .testimonails > p {
+.service > .testimonails > p,
+.team > p {
   color: var(--gray);
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.service > .testimonails > h3,
+.team > h2 {
+  font-size: 40px;
 }
 .service > .testimonails > .tcard-container {
   display: flex;
@@ -222,18 +239,125 @@ main {
   display: flex;
   width: 35%;
   gap: 30px;
-  border: 1px solid green;
+
   height: 150px;
 }
 .service > .testimonails > .tcard-container > .tcard > .image {
   display: flex;
-  width: 20%;
-  height: 50%;
-  border: 1px solid red;
+  width: 60px;
+  height: 60px;
 }
 
 .service > .testimonails > .tcard-container > .tcard > .words {
   display: flex;
-  justify-content: flex-start;
+  flex: 1;
+  justify-content: space-between;
   flex-direction: column;
+  text-align: left;
+}
+
+.service > .testimonails > .tcard-container > .tcard > .words > p.name {
+  margin-top: 20px;
+  bottom: 0;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.team {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.team > .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.team > .container > .card {
+  width: 30%;
+  border: 2px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  border-radius: 10px;
+  gap: 40px;
+}
+
+.team > .container > .card > .image {
+  width: 100px;
+  height: 100px;
+}
+
+.team > .container > .card > p {
+  color: var(--gray);
+  text-transform: uppercase;
+}
+.team > .container > .card > p.name {
+  color: black;
+  text-transform: capitalize;
+}
+.team > .container > .card > .icons {
+  width: 100%;
+  border-top: 2px solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.team > .container > .card > .icons > i {
+  width: 30%;
+  padding: 15px;
+  color: var(--gray);
+  cursor: pointer;
+  border-right: 2px solid var(--gray);
+}
+
+.team > .container > .card > .icons > i:nth-child(3) {
+  border-right: none;
+}
+.news {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 100px;
+}
+
+.news > .image {
+  width: 35%;
+}
+
+.news > .in {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news > .in > input,
+.news > .in > button {
+  width: 100%;
+}
+
+input {
+  height: 40px;
+  box-shadow: 5px 5px 15px 5px var(--gray);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.news > .in > button {
+  background-color: var(--orange);
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+footer > header {
+  height: 40px;
 }
