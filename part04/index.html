@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header section start -->
+    <header
+      class="w-full bg-transparent flex justify-between px-3 md:px-5 lg:px-10 py-5 lg:py-10 items-center"
+    >
+      <!-- menu-burger-btn -->
+      <span class="w-5 h-5 text-white md:hidden" id="menu-burger-btn"
+        ><svg
+          data-slot="icon"
+          fill="none"
+          stroke-width="1.5"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          ></path></svg
+      ></span>
+      <!-- menu-burger-btn end -->
+
+      <!-- logo image -->
+      <div class="w-[30%] flex justify-start">
+        <img
+          src="images/logo.png"
+          alt="logo"
+          class="w-[120px] md:w-[130px] h-[22px]"
+        />
+      </div>
+      <!-- logo image end -->
+
+      <!-- nav bar links -->
+      <nav class="md:flex hidden justify-center">
+        <ul class="w-full flex justify-between items-center md:gap-5 lg:gap-10">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#solution">Solutions</a></li>
+          <li><a href="#customers">Customers</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+      <!-- nav bar links end -->
+
+      <!-- Nav buttons -->
+      <div class="hidden md:flex gap-5 w-[30%] justify-end">
+        <button class="border-none cursor-pointer bg-transparent">Login</button>
+        <button
+          class="border-[1px] cursor-pointer border-gray-100 rounded-lg bg-transparent px-5 py-2"
+        >
+          Request Demo
+        </button>
+      </div>
+      <!-- nav buttons end -->
+    </header>
+    <!-- Header section end -->
+
+    <!-- Main Section -->
+    <main class="md:px-5 lg:px-10 px-3 w-full py-10">
+      <!-- HERO Section Start -->
+      <section class="w-full flex justify-center items-center flex-col gap-5">
+        <button
+          class="px-4 text-[14px] bg-gray-400 rounded-[99px] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[rgba(255,255,255,0.4)] py-2 justify-center flex border bg-gradient-to-r from-[rgba(180,99,255,0.08)] to-[rgba(0,230,118,0.06)]"
+        >
+          Learn How AI Can Help Alleviate the CPA Talent Crisis
+          <div
+            class="w-10 ml-2 flex justify-center items-cneter h-6 rounded-[99px] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[rgba(255,255,255,0.4)]"
+          >
+            <svg
+              data-slot="icon"
+              fill="none"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              ></path>
+            </svg>
+          </div>
+        </button>
+
+        <h1 class="text-[72px] text-center w-[70%] font-bold">
+          The <span class="font-normal italic"> Future </span> of Trust Powered
+          by Fieldguide.
+        </h1>
+      </section>
+      <!-- HeRo Section End -->
+    </main>
+    <!-- Main section End -->
+  </body>
+</html>
