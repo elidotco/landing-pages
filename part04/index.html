@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -70,7 +72,7 @@
     <!-- Header section end -->
 
     <!-- Main Section -->
-    <main class="md:px-5 lg:px-10 px-3 w-full py-5 md:py-10">
+    <main class="md:px-10 lg:px-10 px-3 w-full py-5 md:py-10">
       <!-- HERO Section Start -->
       <section class="w-full flex justify-center items-center flex-col gap-5">
         <button
@@ -192,12 +194,16 @@
               </div>
             </div>
             <button
-              class="py-2 px-3 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[rgba(255,255,255,0.4)] items-center py-2 justify-center text-[16px] md:w-1/3 flex border bg-gray-100 mb-10"
+              class="py-2 px-3 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[rgba(255,255,255,0.4)] items-center py-2 justify-center text-[16px] md:w-1/2 lg:w-1/3 flex border bg-gray-100 mb-10"
             >
               Explore Products
             </button>
           </div>
-          <img src="images/hero/div.v3-tabs-visual.png" alt="" />
+          <img
+            class="animate__animated animate__fadeInLeft md:w-1/2 md:h-full"
+            src="images/hero/div.v3-tabs-visual.png"
+            alt=""
+          />
         </div>
         <!-- card one end -->
 
@@ -251,17 +257,178 @@
               </div>
             </div>
             <button
-              class="py-2 px-3 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[rgba(255,255,255,0.4)] items-center py-2 justify-center text-[16px] md:w-1/3 flex border bg-gray-100 mb-10"
+              class="py-2 px-3 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[rgba(255,255,255,0.4)] items-center py-2 justify-center text-[16px] md:w-1/2 lg:w-1/3 flex border bg-gray-100 mb-10"
             >
               Explore Solutions
             </button>
           </div>
-          <img src="images/hero/div.v3-tabs-visual (1).png" alt="" />
+          <img
+            class="animate__animated animate__fadeInRight md:w-1/2 md:h-full"
+            src="images/hero/div.v3-tabs-visual (1).png"
+            alt=""
+          />
         </div>
         <!-- card two end -->
       </section>
       <!-- About Section End -->
+      <!-- Testimonial section -->
+      <section
+        class="w-full mt-20 flex justify-center items-center text-center flex-col gap-5"
+      >
+        <h2 class="font-semibold text-[24px] md:text-[48px]">
+          Trusted by industry leaders
+        </h2>
+        <p class="text-[#a5a5a5]">
+          Fieldguide is the modern, award-winning platform that powers many of
+          the largest advisory and audit firms.
+        </p>
+        <div class="hidden mt-5 justify-center w-full md:flex gap-10">
+          <div class="py-2 px-3 border border-gray-100 rounded-3xl">
+            <img class="" src="images/hero/comp1.png" alt="" />
+          </div>
+          <div
+            class="py-2 px-3 hover:border hover:border-gray-100 transition-all duration-1s hover:rounded-3xl"
+          >
+            <img class="" src="images/hero/comp4.png" alt="" />
+          </div>
+          <div
+            class="py-2 px-3 hover:border hover:border-gray-100 transition-all duration-1s hover:rounded-3xl"
+          >
+            <img class="" src="images/hero/comp3.png" alt="" />
+          </div>
+          <div
+            class="py-2 px-3 hover:border hover:border-gray-100 transition-all duration-1s hover:rounded-3xl"
+          >
+            <img class="" src="images/hero/comp6.png" alt="" />
+          </div>
+        </div>
+        <div class="flex md:flex-row flex-col mt-20 gap-5">
+          <div class="flex justify-between flex-col md:flex-row">
+            <img
+              class="hidden md:flex"
+              src="images/hero/6512e259a01c45e895e0bce2_Kate-Williams-MLR-p-500.jpg.png"
+              alt=""
+            />
+            <div
+              class="flex flex-col justify-start text-center md:text-left pl-5"
+            >
+              <p class="text-white mb-auto text-[20px] md:text-[30px] md:pr-10">
+                “Software for accounting firms is notoriously outdated, slow,
+                and hard to use. Fieldguide is different – itʼs a more
+                streamlined, cloud-first approach.”
+              </p>
+              <div class="flex items-center">
+                <img
+                  class="w-20 h-full md:hidden pl-2"
+                  src="images/hero/6512e259a01c45e895e0bce2_Kate-Williams-MLR-p-500.jpg.png"
+                  alt=""
+                />
+                <div class="">
+                  <p class="text-white">Kate Willaims</p>
+                  <p class="">Partner, Maxwell Locke & Ritter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="text-[100px] font-semibold">5X</h3>
+            <p class="text-white">Business Growth</p>
+            <p>
+              Fieldguide innovations and efficiencies helped Maxwell Locke &
+              Ritter grow their practice by 5X
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-32 text-center flex flex-col justify-center items-center"
+        >
+          <h2 class="font-semibold md:w-[70%] text-[24px] md:text-[48px]">
+            Learn why the future of advisory and audit services is powered by
+            Fieldguide
+          </h2>
+          <p>
+            Top 500 firms trust Fieldguide's AI Advisory & Audit Cloud. Learn
+            how Fieldguide can help your firm.
+          </p>
+        </div>
+        <div
+          class="flex flex-row bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-[rgba(255,255,255,0.4)] items-center py-2 justify-center flex border bg-gradient-to-r from-[rgba(180,99,255,0.08)] to-[rgba(0,230,118,0.06)] px-2 rounded-lg py-2"
+        >
+          <input
+            type="text"
+            placeholder="Your E-mail"
+            class="bg-transparent outline-none"
+          />
+          <button class="px-4 py-2 bg-[#368537]">Get Started</button>
+        </div>
+
+        <div class="hidden mt-5 gap-10 justify-center w-full md:flex">
+          <img class="" src="images/hero/comp1.png" alt="" />
+          <img class="" src="images/hero/comp2.png" alt="" />
+          <img class="" src="images/hero/comp3.png" alt="" />
+          <img class="" src="images/hero/comp4.png" alt="" />
+          <img class="" src="images/hero/comp5.png" alt="" />
+          <img class="" src="images/hero/comp6.png" alt="" />
+        </div>
+      </section>
+      <!-- Testimonial Secton end-->
     </main>
     <!-- Main section End -->
+
+    <!-- footer section -->
+    <footer
+      class="mx-10 mt-20 px-10 md:py-10 bg-[#151C24] gap-[120px] flex flex-wrap justify-center"
+    >
+      <!-- logo -->
+      <img src="images/logo.png" class="w-[130px] h-full" alt="" />
+      <div class="flex flex-col gap-3">
+        <h3 class="mb-5">Products</h3>
+        <p>Advisory & Audit Cloud</p>
+        <p>FieldGuide AI</p>
+        <p>Engagement Hub</p>
+        <p>Request Management</p>
+        <p>Document Management</p>
+        <p>Reporting Automation</p>
+        <p>Client Hub</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h3 class="mb-5">Solutions</h3>
+        <p>Solutions OVerview</p>
+        <p>Risk Advisory</p>
+        <p>Cybersecurity & Privacy</p>
+        <p>Regulatory Compliance/p></p>
+        <p>SOC Readiness</p>
+        <p>SOC Audit</p>
+        <p>IT Audit</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h3 class="mb-5">Company</h3>
+        <p>About</p>
+        <p>Careers</p>
+        <p>Blog</p>
+        <p>Security></p>
+        <p>Privacy</p>
+        <p>Cookie Policy</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h3 class="mb-5">Contact</h3>
+        <p>Request Demo</p>
+        <p>Contact us</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h3 class="mb-5">Customers</h3>
+        <p>Sign in</p>
+        <p>Support</p>
+        <p>Accelerator</p>
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <!-- ----------------------------------------------------------------end-->
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <!-- Scripts -->
   </body>
 </html>
