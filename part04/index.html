@@ -211,7 +211,11 @@
         <div
           class="flex mt-20 md:flex-row-reverse flex-col-reverse gap-5 md:gap-0 justify-between"
         >
-          <div class="flex flex-col w-full md:w-[48%] justify-start gap-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="flex flex-col w-full md:w-[48%] justify-start gap-3"
+          >
             <p class="text-[#a5a5a5] uppercase">Solutions</p>
             <h3 class="text-2xl font-semibold">
               Top 500 firms trust Fieldguide to modernize their business
@@ -263,7 +267,11 @@
             </button>
           </div>
           <img
-            class="animate__animated animate__fadeInRight md:w-1/2 md:h-full"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="800"
+            class="md:w-1/2 md:h-full"
             src="images/hero/div.v3-tabs-visual (1).png"
             alt=""
           />
@@ -378,7 +386,7 @@
 
     <!-- footer section -->
     <footer
-      class="mx-10 mt-20 px-10 md:py-10 bg-[#151C24] gap-[120px] flex flex-wrap justify-center"
+      class="mx-10 mt-20 px-10 py-5 md:py-10 bg-[#151C24] gap-[120px] flex flex-wrap justify-center"
     >
       <!-- logo -->
       <img src="images/logo.png" class="w-[130px] h-full" alt="" />
@@ -428,6 +436,9 @@
     <!-- ----------------------------------------------------------------end-->
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="index.js"></script>
     <!-- Scripts -->
   </body>

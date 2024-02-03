@@ -15,3 +15,11 @@ body {
 p {
   color: #a5a5a5;
 }
+
+footer p {
+  cursor: pointer;
+}
+footer p:hover {
+  color: white;
+  transition: all 0.2s;
+}
