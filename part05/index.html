@@ -9,6 +9,97 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    hello world
+    <!-- header section -->
+    <header
+      class="bg-[#FFFBF7] md:px-10 px-5 w-full flex justify-between items-center py-5 sticky top-0"
+    >
+      <!-- Menu btn -->
+      <span
+        class="w-7 h-5 cursor-pointer text-2xl md:hidden"
+        id="menu-burger-btn"
+        ><svg
+          data-slot="icon"
+          fill="none"
+          stroke-width="1.5"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          ></path></svg
+      ></span>
+      <!-- menu-btn end -->
+      <div class="logo">
+        <img
+          src="images/logo.png"
+          alt="Logo image"
+          class="w-[130px] md:w-[180px] h-auto"
+        />
+      </div>
+      <ul class="flex gap-5 md:flex hidden">
+        <li class="font-semibold"><a href="#services">Services</a></li>
+        <li class="font-semibold"><a href="#company">Company</a></li>
+        <li class="font-semibold"><a href="#community">Community</a></li>
+        <li class="font-semibold"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="buttons flex gap-8 hidden md:flex">
+        <a
+          href=""
+          class="py-2 px-5 border font-semibold border-[#01071b] text-[#01071b] bg-transparent rounded-3xl"
+          >Log in</a
+        >
+        <a
+          href=""
+          class="py-2 font-semibold px-5 bg-[#01071b] text-white rounded-3xl"
+          >join C2</a
+        >
+      </div>
+    </header>
+    <!-- Header Section ENd -->
+
+    <main class="">
+      <!-- Hero section -->
+      <section class="h-96">
+        <!-- first secton -->
+        <section class="text-[#BAE3f8] bg-[#01071b] flex">
+          <div class="w-full md:p-10 p-5 text-center md:w-1/2 md:text-left">
+            <h1 class="text-[54px] font-bold">
+              Powering the mortgage industry for decades
+            </h1>
+            <article>
+              <p>
+                With over 30 years of experience, C2 Financial is a top mortgage
+                broker in the nation. We offer access to superior loan products,
+                meticulous compliance, and the tools loan originators need to
+                grow their businesses and better the lives of their clients.
+              </p>
+            </article>
+            <button
+              class="mt-20 bg-[#f4efeb] py-3 px-5 text-[#01071b] rounded-3xl"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="w-1/2 hidden md:flex">
+            <img src="images/hero/image.png" alt="" />
+          </div>
+        </section>
+        <!-- fisrt section end -->
+        <div
+          class="flex justify-between bg-[#bae3f8] items-center p-5 lg:px-10"
+        >
+          <h3 class="font-bold">C2 Connect Champion is Feb 28, 2024!</h3>
+          <button class="border px-5 py-2 border-[#01071b] rounded-3xl">
+            Register now
+          </button>
+        </div>
+      </section>
+      <!-- Hero secton end -->
+    </main>
   </body>
 </html>
