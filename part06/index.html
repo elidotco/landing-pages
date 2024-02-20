@@ -9,9 +9,11 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="w-full mx-4 md:mx-9">
-      <nav class="flex flex-row justify-between w-full py-8">
-        <ul class="flex flex-row gap-5">
+    <header class="mx-4 md:mx-9">
+      <nav
+        class="flex flex-row text-[16px] justify-between items-center w-full py-5"
+      >
+        <ul class="hidden md:flex flex-row gap-5">
           <li><a href="#">Download</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Help Center</a></li>
@@ -21,10 +23,12 @@
         <img src="images/Link → SVG.png" alt="logo" />
         <!-- logo end -->
         <!-- menu buttons -->
-        <div class="flex gap-4">
-          <a href="" class="">request Demo</a>
-          <a href="" class="">Log in</a>
-          <a href="" class="py-2 px-3 bg-black">Sign up</a>
+        <div class="flex gap-4 items-center">
+          <a href="" class="hidden md:flex">request Demo</a>
+          <a href="" class="hidden md:flex">Log in</a>
+          <a href="" class="py-2 px-4 text-white bg-black rounded-lg"
+            >Sign up</a
+          >
         </div>
         <!-- menu buttons end -->
       </nav>
@@ -39,7 +43,19 @@
       -->
 
     <!-- Main Section  -->
-    <main class=""></main>
+    <main class="mx-4 md:mx-9">
+      <!-- hero Section -->
+      <section
+        class="bg-[#FAFAFB] flex justify-center rounded-2xl w-full items-center pt-20"
+      >
+        <div class="hero p-10 md:p-1 md:w-[50%]">
+          <h1 class="text-[2rem] text-center md:leading-[70px] md:text-[5rem]">
+            Make sense common
+          </h1>
+        </div>
+      </section>
+      <!-- hero Section end -->
+    </main>
     <!-- Main Section End  -->
 
     <!-- Footer Section  -->

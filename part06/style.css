@@ -6,4 +6,13 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+
+.hero {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  background: url("images/sparkles.svg\ fill.png") no-repeat;
+
+  background-size: cover;
 }
